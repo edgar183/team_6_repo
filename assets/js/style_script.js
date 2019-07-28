@@ -122,3 +122,29 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
+
+
+$("#sptbtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#sports").offset().top
+    }, 2000);
+});
+
+$("#qbtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#quiz-section").offset().top
+    }, 2000);
+});
+
+
+$("#hmbtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#landing").offset().bottom
+    }, 2000);
+});
+
+$("#ctbtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2000);
+});
