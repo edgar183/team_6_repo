@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <!--jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    <!--Bootstrap 4.3.1 CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Quiz CSS-->
+    <link rel="stylesheet" href="quiz.css" type="text/css" />
+    
+    <title>Water Sport Quiz</title>
+</head>
+<body>
+
+    <!-- -------------------------------------------------------------Title  Section -->
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+
+            <div class="row border border-dark title-cookbook">
+                <div class="col-12 text-center">
+                    <h1><strong>What water sport is for you?</strong></h1>
+                </div>
+            </div>
+
+            <div class="row title-cook-today">
+                <div class="col-12 text-center">
+                    <h2>Take this Quiz!</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   <!-- -------------------------------------------------------------Form  Section -->
+
+    <divclass="row container-fluid">
+    
+        <form id="water_sport_quiz">
+    
+            <!-- Question 1 Place -->
+            <div class="form-check">
+                <h3>1. Where do you feel better?</h3>
+                
+                <input class="form-check-input" type="radio" name="place" id="beach" value="beach">
+                <label class="form-check-label" for="beach">Beach.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="place" id="lake" value="lake">
+                <label class="form-check-label" for="lake">Lake.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="place" id="river" value="river">
+                <label class="form-check-label" for="beach">River.</label> <br>
+            </div>
+            
+            <!-- Question 2 Speed -->
+            <div class="form-check">
+                <h3>2. Do you like speed?</h3>
+                
+                <input class="form-check-input" type="radio" name="speed" id="yes_speed" value="yes">
+                <label class="form-check-label" for="yes_speed">Yes.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="speed" id="no_speed" value="no">
+                <label class="form-check-label" for="no_speed">No.</label> <br>
+            </div>
+            
+            <!-- Question 3 Height -->
+            <div class="form-check">
+                <h3>3. Are you afraid of  heights?</h3>
+                
+                <input class="form-check-input" type="radio" name="afraid_height" id="yes_afraid_height" value="yes">
+                <label class="form-check-label" for="yes_afraid_height">Yes.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="afraid_height" id="no_afraid_height" value="no">
+                <label class="form-check-label" for="no_afraid_height">No.</label> <br>
+            </div>
+            
+            <!-- Question 4 Resistance -->
+            <div class="form-check">
+                <h3>4. How athletic are you?</h3>
+                
+                <input class="form-check-input" type="radio" name="resistance" id="very_athletic" value="very_athletic">
+                <label class="form-check-label" for="very_athletic">Very Athletic.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="resistance" id="athletic" value="athletic">
+                <label class="form-check-label" for="athletic">Athletic.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="resistance" id="moderate" value="moderate">
+                <label class="form-check-label" for="moderate">Moderate.</label> <br>
+            </div>
+             
+            <!-- Question 5 Height -->
+            <div class="form-check">
+                <h3>5. Would you like to go underwater?</h3>
+                
+                <input class="form-check-input" type="radio" name="underwater" id="yes_underwater" value="yes">
+                <label class="form-check-label" for="yes_underwater">Yes.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="underwater" id="no_underwater" value="no">
+                <label class="form-check-label" for="no_underwater">No.</label> <br>
+            </div>
+            
+            <!-- Question 6 Position -->
+            <div class="form-check">
+                <h3>6. How would you feel more confortable?</h3>
+                
+                <input class="form-check-input" type="radio" name="position" id="standing" value="standing">
+                <label class="form-check-label" for="standing">Standing.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="position" id="seated" value="seated">
+                <label class="form-check-label" for="seated">Seated.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="position" id="floating" value="floating">
+                <label class="form-check-label" for="floating">Floating.</label> <br>
+            </div>
+            
+            <!-- Question 7 Height -->
+            <div class="form-check">
+                <h3>7. Do you like boats?</h3>
+                
+                <input class="form-check-input" type="radio" name="boats" id="yes_boats" value="yes">
+                <label class="form-check-label" for="yes_boats">Yes.</label> <br>
+                
+                <input class="form-check-input" type="radio" name="boats" id="no_boats" value="no">
+                <label class="form-check-label" for="no_boats">No.</label> <br>
+            </div>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <!-- -------------------------------------------------------------Title  Section -->
+    
+    <!-- ------Divind result -->
+    <div class="container-fluid result" id="diving">
+        <h2> Diving is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-- ------Surfing result -->
+    <div class="container-fluid result" id="surfing">
+        <h2> Surfing is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-- ------SUP/Paddleboarding result -->
+    <div class="container-fluid result" id="sup">
+        <h2> SUP (Paddleboarding) is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-- ------Kiteboarding result -->
+    <div class="container-fluid result" id="kiteboarding">
+        <h2> Kiteboarding is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-- ------Kayak result -->
+    <div class="container-fluid result" id="kayak">
+        <h2> Kayak is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-- ------Wakeboarding result -->
+    <div class="container-fluid result" id="wakeboarding">
+        <h2> Wakeboarding is for you!</h2>
+        <a target="_blank" href="#" >Click here to know more</a>
+    </div>
+    
+    <!-----------------------------------------------------------------jQuery-->
+    <script type="text/javascript">
+    
+        $("#water_sport_quiz").submit(function(event) {
+            event.preventDefault();
+    
+            var answers = $(this).serializeArray();
+    
+            console.log(answers);
+    
+            var diving = 0;
+            var surfing = 0;
+            var sup = 0;
+            var kiteboarding = 0;
+            var kayak = 0;
+            var wakeboarding = 0;
+            
+            
+            
+            //if ( < max_ingredients) { //max input box allowed
+            //       number_of_ingredient++; //text box increment
+            //       $(wrapper_ingredient).append('<div><input type="text" name="ingredients"/><a href="#" class="remove_ingredient">Remove</a></div>'); //add input box
+            //   }
+            // });
+    
+             if (answers.key == 'place'){
+                 if (answers.value == 'beach') {
+                     diving +=1
+                     surfing +=1
+                     sup +=1
+                     kiteboarding +=1
+                     kayak +=1
+                     wakeboarding +=1
+                 }
+                 
+             }
+    
+            console.log(diving, surfing, sup, kiteboarding, kayak, wakeboarding)
+    //Object.keys(object1)
+  
+    
+        });
+        
+    </script>
+</body>
+</html>
