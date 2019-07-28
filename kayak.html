@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kayaking</title>
+</head>
+<body>
+            <p>
+                Kayaking is the use of a kayak for moving across water. It is distinguished 
+                from canoeing by the sitting position of the paddler and the number of blades 
+                on the paddle. A kayak is a low-to-the-water, canoe-like boat in which the 
+                paddler sits facing forward, legs in front, using a double-bladed paddle to 
+                pull front-to-back on one side and then the other in rotation.Most kayaks 
+                have closed decks, although sit-on-top and inflatable kayaks are both growing 
+                in popularity.
+            </p>
+            <p>
+                Kayaks were created thousands of years ago by the Inuit, formerly known as 
+                Eskimos, of the northern Arctic regions. They used driftwood and sometimes the 
+                skeleton of whale, to construct the frame of the kayak, and animal skin, particularly 
+                seal skin was used to create the body. The main purpose for creating the kayak, 
+                which literally translates to "hunter's boat" was for hunting and fishing. 
+                The kayak's stealth capabilities allowed for the hunter to sneak up behind 
+                animals on the shoreline and successfully catch their prey
+            </p>
+            
+
+<div style="text-align:center">
+  <h2>Images</h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/Kayaking/canarywharf.jpg" alt="Canary Wharf" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Kayaking/glowworms.jpg" alt="Glow Worms" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Kayaking/kayakinginalaska.JPG" alt="Alaska" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Kayaking/ottawa.jpg" alt="Otawwa" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Kayaking/sarasotaadventure.jpg" alt="Sarasota Adventure" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Kayaking/seakayaking.jpg" alt="Sea Kayaking" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>
