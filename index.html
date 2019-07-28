@@ -62,7 +62,10 @@
                     <div class="card">
                         <div class="card-body d-flex justify-content-center align-items-end">
                             <div>
-                                <p class="d-flex justify-content-center align-items-start" id="quiz"></p><button class="btn btn-primary" id="next" type="button">Next</button></div>
+                                <p class="d-flex justify-content-center align-items-start" id="quiz">
+                                </p>
+                                <button class="btn btn-primary" id="next" type="button">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -70,7 +73,7 @@
         </div>
     </section>
     <!-- sport section -->
-    <section class="landing-page" id="sports">
+    <section class="contact-us-page" id="sports">
         <div class="container pt-4">
             <div class="row">
                 <!-- Kitesurfing card -->
@@ -142,14 +145,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- contact form -->
-    <section class="d-lg-flex contact-us-page" id="contact">
-        <div class="container form-logo">
-            <div class="row">
-                <div class="col d-lg-flex justify-content-lg-center"><img id="contact-logo" src="assets/image/logo.svg"></div>
-                <div class="col d-lg-flex justify-content-lg-center">
+            <div class="row pt-4">
+                <!-- contact form -->
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center contact-us-page"><img id="contact-logo" src="assets/image/logo.svg"></div>
+                <div class="col-sm-12 col-md-8 d-flex justify-content-center pt-2">
                     <div class="contact-form">
                         <form>
                             <div class="form-group"><input class="form-control form-control-lg" type="text" required="" placeholder="Name"></div>
@@ -160,20 +159,24 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <!-- Footer -->
+                <div class="col-12 footer-basic">
+                    <footer>
+                        <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#home">Home</a></li>
+                            <li class="list-inline-item"><a href="#sports">Sports</a></li>
+                            <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
+                        </ul>
+                    </footer>
+                    <div class="text-center"><span>Copyright team-6</span></div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Footer -->
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#home">Home</a></li>
-                <li class="list-inline-item"><a href="#sports">Sports</a></li>
-                <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
-            </ul>
-        </footer>
-        <div class="text-center"><span>Copyright team-6</span></div>
-    </div>
+
+
     <!--JS imports-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
