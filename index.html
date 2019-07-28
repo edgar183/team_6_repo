@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="card" style="width: 18rem;">
+        <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
+        <div class="card-body">
+            <h5 class="card-title">Kitesurfing</h5>
+            <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">
+  Read More
+</button>
+        </div>
+    </div>
+    <!--JS imports-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+<!--Kitesurfing modal-->
+<div class="modal fade" id="kiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!--<img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive" style="margin:0 auto;"></img>-->
+            <div class="modal-header">
+                <h5 class="modal-title">Kitesurfing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <p>Harnessed to a large hand-controlled kite, and powered by the wind, the kiteboarder uses a board (similar to a snowboard, wakeboard or skateboard) to ride and glide across the water. Kiteboarders are only able to fly their kites through
+                    an imaginary wind window. Unlike in windsurfing and other sailing disciplines, kiteboarders need minimum wind speed to get their wings up in the sky. The sport of kiteboarding has its roots in the south of France. Between the late
+                    1970s and early 1980s, brothers Dominique and Bruno Legaignoux started testing the use of a dual line kite in water skiing. They got the inspiration from the "Jacob's Ladder" catamaran and its stacked Flexifoil kites, and from the
+                    Birdsail, a kind of mini hang-glider that replaced the windsurf sail. In the early 1990s, and after a few years of research, development, and testing, Oregon's Cory Roeseler and his dad founded KiteSki. The company developed an eye-catching
+                    patent-protected kite sports bundle that included a kite, board, and a reel bar.
+                </p>
+                <ol>
+                    <h5 class="text-xl-left font-weight-bolder">Best Place To Kite In Europ</h5>
+                    <li>Bamburgh Beach, UK</li>
+                    <li>Porto Pollo, Sardinia</li>
+                    <li>Lake Garda, Italy</li>
+                    <li>Paros, Greece</li>
+                    <li>Pissouri, Cyprus</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <a href="https://en.wikipedia.org/wiki/Kiteboarding" class="btn btn-primary" target="_blank">Wiki</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>
