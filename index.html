@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
                 <ul class="nav navbar-nav text-uppercase p-3 px-5">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#home">home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="sports.html">sports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#sports">sports</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="quiz.html">Quiz</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">contacts</a></li>
                 </ul>
@@ -38,8 +38,7 @@
             </div>
             <div class="row pt-5">
                 <div class="col d-lg-flex justify-content-lg-center">
-                    <!--<h1 class="text-uppercase d-xl-flex justify-content-xl-center heading heading_1">summer outdoor sports</h1>-->
-                    <h1>summer outdoor sports</h1>
+                    <h1 class="text-uppercase d-xl-flex justify-content-xl-center heading heading_1">summer outdoor sports</h1>
                 </div>
             </div>
             <div class="row pt-5 pb-4">
@@ -52,17 +51,75 @@
             </div>
         </div>
     </section>
-    <!-- Kitesurfing card -->
-    <div class="card" style="width: 18rem;">
-        <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
-        <div class="card-body">
-            <h5 class="card-title">Kitesurfing</h5>
-            <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">
-  Read More
-</button>
+    <!-- Quiz section -->
+    <section class="d-lg-flex quiz-page" id="quiz-section">
+        <div class="container d-lg-flex justify-content-lg-center">
+            <div class="row">
+                <div class="col-lg-12 d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <h1 class="text-uppercase heading_1 heading">take a quiz</h1>
+                </div>
+                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <div class="card">
+                        <div class="card-body d-lg-flex justify-content-lg-center align-items-lg-end">
+                            <div>
+                                <p class="d-lg-flex justify-content-lg-center align-items-lg-start" id="quiz"></p><button class="btn btn-primary" id="next" type="button">Next</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- sport section -->
+    <section class="landing-page" id="sports">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <!-- Kitesurfing card -->
+                    <div class="card pt-4 pl-2" style="width: 18rem;">
+                        <div class="card-body ">
+                            <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
+                            <h5 class="card-title">Kitesurfing</h5>
+                            <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Surfing card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/surf/surfing.jpg" class="card-img-top" alt="Surfing">
+                            <h5 class="card-title">Surfing</h5>
+                            <p class="card-text">Surfing is a water sport that involves riding breaking waves to shore on a piece of equipment called a surfboard. Surfing is usually done in the ocean, but developments in technology have made it possible to create waves in
+                                pools and rivers as an alternative.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#surfModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kayak card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/Kayaking/seakayaking.jpg" class="card-img-top" alt="Kayaking">
+                            <h5 class="card-title">Kayaking</h5>
+                            <p class="card-text">Kayaking is the use of a kayak for moving across water. It is distinguished from canoeing by the sitting position of the paddler and the number of blades on the paddle.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kayakModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wakeboard card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/wakeboarding/wakebd5.jpeg" class="card-img-top" alt="Kayaking">
+                            <h5 class="card-title">Wakeboard</h5>
+                            <p class="card-text">Wakeboarding is a water sport in which the rider, standing on a wakeboard (a short board with foot bindings), is towed behind a motorboat across its wake and especially up off the crest for aerial maneuvers.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wakekModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- contact form -->
     <section class="d-lg-flex contact-us-page" id="contact">
         <div class="container form-logo">
@@ -102,7 +159,7 @@
     <div class="modal fade" id="kiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <!--<img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive" style="margin:0 auto;"></img>-->
+                <img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
                 <div class="modal-header">
                     <h5 class="modal-title">Kitesurfing</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -127,7 +184,99 @@
                 </div>
                 <div class="modal-footer">
                     <a href="https://en.wikipedia.org/wiki/Kiteboarding" class="btn btn-primary" target="_blank">Wiki</a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Surfing Modal -->
+    <div class="modal fade" id="surfModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/surf/surfing1.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Surfing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Surfing is considered dynamic and accessible, meaning adults, children and even dogs can learn. The popular sport has also inspired several variations, including windsurfing, wakeboarding and skim boarding. The origin of the sport
+                        is said to date back thousands of years, to Polynesia and pre-modern Hawaii, but it’s difficult to pinpoint when exactly it began. Some say fishermen began surfing as a means to move more quickly on the water and then surfing gradually
+                        became a leisure activity. Today it has evolved into more than just a sport; recreational surfing has developed it’s own subculture. Interestingly, the attitude of that culture often clashes with the concept of competitive surfing.
+                        Athletes from each side tend to have very different ideas about the sport and lifestyle. If you’re looking to try surfing for the first time, it’s best to rent the equipment and seek out a qualified instructor. Remember to wear
+                        a wetsuit if the water is cold and to have fun with it. Very few people master surfing during their first lesson, but those who stick with it quickly develop the skills and passion for the sport.
+                    </p>
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best surfing places in Europ</h5>
+                        <li>Spain</li>
+                        <li>The U.K.</li>
+                        <li>France</li>
+                        <li>Portugal</li>
+                        <li>Ireland</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Surfing" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kayaking Modal -->
+    <div class="modal fade" id="kayakModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/Kayaking/ottawa.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Kayaking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>A kayak is a low-to-the-water, canoe-like boat in which the paddler sits facing forward, legs in front, using a double-bladed paddle to pull front-to-back on one side and then the other in rotation.Most kayaks have closed decks, although
+                        sit-on-top and inflatable kayaks are both growing in popularity.
+                    </p>
+                    <p>
+                        Kayaks were created thousands of years ago by the Inuit, formerly known as Eskimos, of the northern Arctic regions. They used driftwood and sometimes the skeleton of whale, to construct the frame of the kayak, and animal skin, particularly seal skin was
+                        used to create the body. The main purpose for creating the kayak, which literally translates to "hunter's boat" was for hunting and fishing. The kayak's stealth capabilities allowed for the hunter to sneak up behind animals on
+                        the shoreline and successfully catch their prey
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Kayaking" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wakeboard Modal -->
+    <div class="modal fade" id="wakekModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/wakeboarding/wakebd2.jpeg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Wakeboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>The rider is usually towed by a rope, but can also be towed by cable systems and winches, and other motorized vehicles like personal watercrafts, cars, trucks, and all-terrain vehicles. Wakeboards are used for competition and pleasure,
+                        including freestyle wakeboarding, X-games, and wakeboard park. The gear and wakeboard boat used are personalized to each individuals’ liking. With diligent practice and training a rider will be skilled enough over time to start
+                        learning and performing tricks.
+                    </p>
+
+                    <p>
+                        Wakeboarding was invented by surfers who were looking for an alternative to surfing when the waves were down and the water was calm. When the wakeboard was invented it was first called a "Skurfer" which was named by Tony Finn in 1985 because the board
+                        is a combination of a surfboard and a water ski. The first board made in the late 80's was introduced by the O’Brien company, which is a water ski manufacturer.
+                    </p>
+
+                    <p>
+                        The O’Brien company introduced the Hyperlite board that was the first “compression-molded neutral-buoyancy wakeboard”. This board made starting in deeper water easier and wakeboarders were able to turn the board more easily. The introduction of this Hyperlite
+                        board was a successful invention by the company that took off in the market and has continued to show success. A variety of boards have been made since then that are more curved and compacted creating a smoother ride.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Wakeboarding" class="btn btn-primary" target="_blank">Wiki</a>
                 </div>
             </div>
         </div>
