@@ -268,7 +268,7 @@ ul {
   background-attachment: fixed;
   background-size: cover;
   width: auto;
-  height: calc(100vh - 154px);
+  /*height: calc(100vh - 154px);*/
 }
 
 .contact-form {
