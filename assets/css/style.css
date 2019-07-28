@@ -136,7 +136,8 @@ ul {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,

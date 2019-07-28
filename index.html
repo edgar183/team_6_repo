@@ -17,138 +17,143 @@
 </head>
 
 <body>
-    <!--NavBar-->
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
-        <div class="container-fluid"><img class="d-flex" id="logo" src="assets/image/logo.svg"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
-                <ul class="nav navbar-nav text-uppercase p-3 px-5">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#home">home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#sports">sports</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="quiz.html">Quiz</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">contacts</a></li>
+    <div class="container-fluid">
+        <!--NavBar-->
+        <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+            <div class="container-fluid"><img class="d-flex" id="logo" src="assets/image/logo.svg"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
+                    <ul class="nav navbar-nav text-uppercase p-3 px-5">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#home">home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#sports">sports</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Landing page-->
+        <section id="home" class="landing-page">
+            <div class="container landing-page__content">
+                <div class="row pt-1">
+                    <div class="col d-flex text-center justify-content-center justify-content-xl-center"><img class="main-page-logo__big" src="assets/image/logo.svg"></div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="text-uppercase d-xl-flex justify-content-xl-center heading heading_1">summer outdoor sports</h1>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-4">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="justify-content-xl-center heading heading_2">Which sport are you made for? Take our 60 - second test</h1>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col d-flex justify-content-center"><a class="btn btn-primary px-5" role="button" href="#quiz-section">Get started</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz section -->
+        <section class="d-lg-flex quiz-page" id="quiz-section">
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                        <h1 class="text-uppercase heading_1 heading">take a quiz</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <div class="card">
+                            <div class="card-body d-flex justify-content-center align-items-end">
+                                <div>
+                                    <p class="d-flex justify-content-center align-items-center" id="quiz"></p>
+                                    <button class="btn btn-primary" id="next" type="button">Next</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sport section -->
+        <section class="landing-page" id="sports">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-s-12 col-md-6 col-lg-4">
+                        <!-- Kitesurfing card -->
+                        <div class="card pt-4 pl-2" style="width: 18rem;">
+                            <div class="card-body ">
+                                <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
+                                <h5 class="card-title">Kitesurfing</h5>
+                                <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Surfing card -->
+                    <div class="col-s-12 col-md-6 col-lg-4">
+                        <div class="card pt-4 pl-2" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="assets/image/surf/surfing.jpg" class="card-img-top" alt="Surfing">
+                                <h5 class="card-title">Surfing</h5>
+                                <p class="card-text">Surfing is a water sport that involves riding breaking waves to shore on a piece of equipment called a surfboard. Surfing is usually done in the ocean, but developments in technology have made it possible to create waves
+                                    in pools and rivers as an alternative.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#surfModal">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kayak card -->
+                    <div class="col-s-12 col-md-6 col-lg-4">
+                        <div class="card pt-4 pl-2" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="assets/image/Kayaking/seakayaking.jpg" class="card-img-top" alt="Kayaking">
+                                <h5 class="card-title">Kayaking</h5>
+                                <p class="card-text">Kayaking is the use of a kayak for moving across water. It is distinguished from canoeing by the sitting position of the paddler and the number of blades on the paddle.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kayakModal">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wakeboard card -->
+                    <div class="col-s-12 col-md-6 col-lg-4">
+                        <div class="card pt-4 pl-2" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="assets/image/wakeboarding/wakebd5.jpeg" class="card-img-top" alt="Kayaking">
+                                <h5 class="card-title">Wakeboard</h5>
+                                <p class="card-text">Wakeboarding is a water sport in which the rider, standing on a wakeboard (a short board with foot bindings), is towed behind a motorboat across its wake and especially up off the crest for aerial maneuvers.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wakekModal">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact form -->
+        <section class="d-lg-flex contact-us-page" id="contact">
+            <div class="container form-logo">
+                <div class="row">
+                    <div class="col d-flex justify-content-center"><img id="contact-logo" src="assets/image/logo.svg"></div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-group"><input class="form-control form-control-lg" type="text" required="" placeholder="Name"></div>
+                                <div class="form-group"><input class="form-control form-control-lg" type="email" placeholder="Email"></div>
+                                <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Message"></textarea></div>
+                                <div class="form-group"><button class="btn btn-dark btn-lg justify-content-lg-start align-items-lg-end" type="submit">Contact us</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#home">Home</a></li>
+                    <li class="list-inline-item"><a href="#sports">Sports</a></li>
+                    <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
                 </ul>
-            </div>
+            </footer>
+            <div class="text-center"><span>Copyright team-6</span></div>
         </div>
-    </nav>
-    <!--Landing page-->
-    <section id="home" class="landing-page">
-        <div class="container landing-page__content">
-            <div class="row pt-1">
-                <div class="col d-lg-flex justify-content-lg-center justify-content-xl-center"><img class="main-page-logo__big" src="assets/image/logo.svg"></div>
-            </div>
-            <div class="row pt-5">
-                <div class="col d-lg-flex justify-content-lg-center">
-                    <h1 class="text-uppercase d-xl-flex justify-content-xl-center heading heading_1">summer outdoor sports</h1>
-                </div>
-            </div>
-            <div class="row pt-5 pb-4">
-                <div class="col d-lg-flex justify-content-lg-center">
-                    <h1 class="justify-content-xl-center heading heading_2">Which sport are you made for? Take our 60 - second test</h1>
-                </div>
-            </div>
-            <div class="row pt-5">
-                <div class="col d-lg-flex justify-content-lg-center"><a class="btn btn-primary px-5" role="button" href="#quiz-section">Get started</a></div>
-            </div>
-        </div>
-    </section>
-    <!-- Quiz section -->
-    <section class="d-lg-flex quiz-page" id="quiz-section">
-        <div class="container d-lg-flex justify-content-lg-center">
-            <div class="row">
-                <div class="col-lg-12 d-lg-flex justify-content-lg-center align-items-lg-center">
-                    <h1 class="text-uppercase heading_1 heading">take a quiz</h1>
-                </div>
-                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center">
-                    <div class="card">
-                        <div class="card-body d-lg-flex justify-content-lg-center align-items-lg-end">
-                            <div>
-                                <p class="d-lg-flex justify-content-lg-center align-items-lg-start" id="quiz"></p><button class="btn btn-primary" id="next" type="button">Next</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- sport section -->
-    <section class="landing-page" id="sports">
-        <div class="container pt-4">
-            <div class="row">
-                <div class="col-s-12 col-md-6 col-lg-4">
-                    <!-- Kitesurfing card -->
-                    <div class="card pt-4 pl-2" style="width: 18rem;">
-                        <div class="card-body ">
-                            <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
-                            <h5 class="card-title">Kitesurfing</h5>
-                            <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Surfing card -->
-                <div class="col-s-12 col-md-6 col-lg-4">
-                    <div class="card pt-4 pl-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/image/surf/surfing.jpg" class="card-img-top" alt="Surfing">
-                            <h5 class="card-title">Surfing</h5>
-                            <p class="card-text">Surfing is a water sport that involves riding breaking waves to shore on a piece of equipment called a surfboard. Surfing is usually done in the ocean, but developments in technology have made it possible to create waves in
-                                pools and rivers as an alternative.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#surfModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Kayak card -->
-                <div class="col-s-12 col-md-6 col-lg-4">
-                    <div class="card pt-4 pl-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/image/Kayaking/seakayaking.jpg" class="card-img-top" alt="Kayaking">
-                            <h5 class="card-title">Kayaking</h5>
-                            <p class="card-text">Kayaking is the use of a kayak for moving across water. It is distinguished from canoeing by the sitting position of the paddler and the number of blades on the paddle.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kayakModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Wakeboard card -->
-                <div class="col-s-12 col-md-6 col-lg-4">
-                    <div class="card pt-4 pl-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/image/wakeboarding/wakebd5.jpeg" class="card-img-top" alt="Kayaking">
-                            <h5 class="card-title">Wakeboard</h5>
-                            <p class="card-text">Wakeboarding is a water sport in which the rider, standing on a wakeboard (a short board with foot bindings), is towed behind a motorboat across its wake and especially up off the crest for aerial maneuvers.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wakekModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- contact form -->
-    <section class="d-lg-flex contact-us-page" id="contact">
-        <div class="container form-logo">
-            <div class="row">
-                <div class="col d-lg-flex justify-content-lg-center"><img id="contact-logo" src="assets/image/logo.svg"></div>
-                <div class="col d-lg-flex justify-content-lg-center">
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group"><input class="form-control form-control-lg" type="text" required="" placeholder="Name"></div>
-                            <div class="form-group"><input class="form-control form-control-lg" type="email" placeholder="Email"></div>
-                            <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Message"></textarea></div>
-                            <div class="form-group"><button class="btn btn-dark btn-lg justify-content-lg-start align-items-lg-end" type="submit">Contact us</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#home">Home</a></li>
-                <li class="list-inline-item"><a href="#sports">Sports</a></li>
-                <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
-            </ul>
-        </footer>
-        <div class="text-center"><span>Copyright team-6</span></div>
     </div>
     <!--JS imports-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
