@@ -22,17 +22,16 @@
 <body>
 
     <!-- -------------------------------------------------------------Title  Section -->
-    <div class="container-fluid">
-
+    <div class="container-fluid water-sport-image"> 
         <div class="container-fluid">
 
-            <div class="row border border-dark title-cookbook">
-                <div class="col-12 text-center">
+            <div class="row border border-dark">
+                <div class="col-12 text-center quiz-title">
                     <h1><strong>What water sport is for you?</strong></h1>
                 </div>
             </div>
 
-            <div class="row title-cook-today">
+            <div class="row">
                 <div class="col-12 text-center">
                     <h2>Take this Quiz!</h2>
                 </div>
@@ -45,10 +44,10 @@
 
     <divclass="row container-fluid">
 
-        <form id="water_sport_quiz">
+        <form id="water_sport_quiz" class="col-12 text-center">
 
             <!-- Question 1 Place -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>1. Where do you feel better?</h3>
 
                 <input class="form-check-input" type="radio" name="place" id="beach" value="beach">
@@ -62,7 +61,7 @@
             </div>
 
             <!-- Question 2 Speed -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>2. Do you like speed?</h3>
 
                 <input class="form-check-input" type="radio" name="speed" id="yes_speed" value="yes_speed">
@@ -73,7 +72,7 @@
             </div>
 
             <!-- Question 3 Height -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>3. Are you afraid of heights?</h3>
 
                 <input class="form-check-input" type="radio" name="afraid_height" id="yes_afraid_height" value="yes_afraid_height">
@@ -84,7 +83,7 @@
             </div>
 
             <!-- Question 4 Resistance -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>4. How athletic are you?</h3>
 
                 <input class="form-check-input" type="radio" name="resistance" id="very_athletic" value="very_athletic">
@@ -98,7 +97,7 @@
             </div>
 
             <!-- Question 5 Underwater -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>5. Would you like to go underwater?</h3>
 
                 <input class="form-check-input" type="radio" name="underwater" id="yes_underwater" value="yes_underwater">
@@ -109,7 +108,7 @@
             </div>
 
             <!-- Question 6 Position -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>6. How would you feel more confortable?</h3>
 
                 <input class="form-check-input" type="radio" name="position" id="standing" value="standing">
@@ -123,7 +122,7 @@
             </div>
 
             <!-- Question 7 Height -->
-            <div class="form-check">
+            <div class="form-check form-quiz">
                 <h3>7. Do you like boats?</h3>
 
                 <input class="form-check-input" type="radio" name="boats" id="yes_boats" value="yes_boats">
@@ -133,46 +132,58 @@
                 <label class="form-check-label" for="no_boats">No.</label> <br>
             </div>
 
-            <input type="submit" value="Submit">
+            <!-- Submit/Reset Buttons -->
+            <div class="form-quiz">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            
         </form>
         </div>
 
         <!-- -------------------------------------------------------------Title  Section -->
 
         <!-- ------Divind result -->
-        <div class="container-fluid result" id="diving">
+        <div class="container-fluid result text-center quiz-title" id="diving">
+            
             <h2> Diving is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
         </div>
 
         <!-- ------Surfing result -->
-        <div class="container-fluid result" id="surfing">
+        <div class="container-fluid result text-center form-quiz" id="surfing">
             <h2> Surfing is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
         </div>
 
         <!-- ------SUP/Paddleboarding result -->
-        <div class="container-fluid result" id="sup">
+        <div class="container-fluid result text-center form-quiz" id="sup">
             <h2> SUP (Paddleboarding) is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
         </div>
 
         <!-- ------Kiteboarding result -->
-        <div class="container-fluid result" id="kiteboarding">
+        <div class="container-fluid result text-center form-quiz" id="kiteboarding">
             <h2> Kiteboarding is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
         </div>
 
         <!-- ------Kayak result -->
-        <div class="container-fluid result" id="kayak">
+        <div class="container-fluid result text-center form-quiz" id="kayak">
             <h2> Kayak is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
         </div>
 
         <!-- ------Wakeboarding result -->
-        <div class="container-fluid result" id="wakeboarding">
+        <div class="container-fluid result text-center form-quiz" id="wakeboarding">
             <h2> Wakeboarding is for you!</h2>
-            <a target="_blank" href="#">Click here to know more</a>
+            <a target="_blank" href="#">Click here to know more!</a>
+        </div>
+        
+        <!-- ------Retake the quiz -->
+        <div class="container-fluid result text-center form-quiz" id="retake_quiz">
+            <h3> Would you like to take the Quiz again?</h3>
+            <a  href="quiz.html">Click here!</a>
         </div>
 
         <!-----------------------------------------------------------------jQuery-->
@@ -291,8 +302,6 @@
                     }
                 }
                 
-                console.log(diving, surfing, sup, kiteboarding, kayak, wakeboarding)
-                
                 // Find out which Water Sport choice got the highest score.
                 var maxscore = Math.max(diving, surfing, sup, kiteboarding, kayak, wakeboarding);
                 var your_water_sport = ''
@@ -327,9 +336,8 @@
                //-------------------------- Displaying Results section
                 $("#water_sport_quiz").css('display', 'none');
                 $(".result#"+your_water_sport).css('display', 'block');
+                $(".result#retake_quiz").css('display', 'block');
                 
-                console.log(maxscore)
-                console.log(your_water_sport)
                 });
         </script>
 </body>
