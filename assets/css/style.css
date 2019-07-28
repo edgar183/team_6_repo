@@ -238,6 +238,9 @@ ul {
   color: var(--mainWhite);
 }
 
+.card-img-top{
+  height: 300px;
+}
 .sport-card {
   width: 791px;
   height: 319px;
