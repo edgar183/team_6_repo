@@ -148,7 +148,7 @@ ul {
 /* Main page */
 
 .landing-page {
-  background-image: url("assets/image/background-image.png");
+  background-image: url("../image/background-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -196,7 +196,7 @@ ul {
 /* Quiz Page */
 
 .quiz-page {
-  background-image: url("assets/image/background-image-2.png");
+  background-image: url("../image/background-image-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -226,7 +226,7 @@ ul {
 /* Sports */
 
 .kayaking {
-  background-image: url("assets/image/kayaking.png");
+  background-image: url("../image/kayaking.png");
 }
 
 .sport-heading {
@@ -259,7 +259,7 @@ ul {
 }
 
 .contact-us-page {
-  background-image: url("assets/image/background-image.png");
+  background-image: url("../image/background-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
