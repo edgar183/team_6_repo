@@ -2,14 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Summer Outdoor sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+        <div class="container-fluid"><img class="d-flex" id="logo" src="assets/image/logo.svg"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
+                <ul class="nav navbar-nav text-uppercase p-3 px-5">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#home">home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#sports">sports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Landing page-->
+    <section id="home" class="landing-page">
+        <div class="container landing-page__content">
+            <div class="row pt-1">
+                <div class="col d-lg-flex justify-content-lg-center justify-content-xl-center"><img class="main-page-logo__big" src="assets/image/logo.svg"></div>
+            </div>
+            <div class="row pt-5">
+                <div class="col d-lg-flex justify-content-lg-center">
+                    <h1 class="text-uppercase d-xl-flex justify-content-xl-center heading heading_1">summer outdoor sports</h1>
+                </div>
+            </div>
+            <div class="row pt-5 pb-4">
+                <div class="col d-lg-flex justify-content-lg-center">
+                    <h1 class="justify-content-xl-center heading heading_2">Which sport are you made for? Take our 60 - second test</h1>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col d-lg-flex justify-content-lg-center"><a class="btn btn-primary px-5" role="button" href="#quiz-section">Get started</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- Kitesurfing card -->
     <div class="card" style="width: 18rem;">
         <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
         <div class="card-body">
@@ -20,45 +62,74 @@
 </button>
         </div>
     </div>
+    <!-- contact form -->
+    <section class="d-lg-flex contact-us-page" id="contact">
+        <div class="container form-logo">
+            <div class="row">
+                <div class="col d-lg-flex justify-content-lg-center"><img id="contact-logo" src="assets/image/logo.svg"></div>
+                <div class="col d-lg-flex justify-content-lg-center">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group"><input class="form-control form-control-lg" type="text" required="" placeholder="Name"></div>
+                            <div class="form-group"><input class="form-control form-control-lg" type="email" placeholder="Email"></div>
+                            <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Message"></textarea></div>
+                            <div class="form-group"><button class="btn btn-dark btn-lg justify-content-lg-start align-items-lg-end" type="submit">Contact us</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#home">Home</a></li>
+                <li class="list-inline-item"><a href="#sports">Sports</a></li>
+                <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
+            </ul>
+        </footer>
+        <div class="text-center"><span>Copyright team-6</span></div>
+    </div>
     <!--JS imports-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-<!--Kitesurfing modal-->
-<div class="modal fade" id="kiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <!--<img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive" style="margin:0 auto;"></img>-->
-            <div class="modal-header">
-                <h5 class="modal-title">Kitesurfing</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="assets/js/style_script.js"></script>
+    <!--Kitesurfing modal-->
+    <div class="modal fade" id="kiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!--<img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive" style="margin:0 auto;"></img>-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Kitesurfing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-            </div>
-            <div class="modal-body">
-                <p>Harnessed to a large hand-controlled kite, and powered by the wind, the kiteboarder uses a board (similar to a snowboard, wakeboard or skateboard) to ride and glide across the water. Kiteboarders are only able to fly their kites through
-                    an imaginary wind window. Unlike in windsurfing and other sailing disciplines, kiteboarders need minimum wind speed to get their wings up in the sky. The sport of kiteboarding has its roots in the south of France. Between the late
-                    1970s and early 1980s, brothers Dominique and Bruno Legaignoux started testing the use of a dual line kite in water skiing. They got the inspiration from the "Jacob's Ladder" catamaran and its stacked Flexifoil kites, and from the
-                    Birdsail, a kind of mini hang-glider that replaced the windsurf sail. In the early 1990s, and after a few years of research, development, and testing, Oregon's Cory Roeseler and his dad founded KiteSki. The company developed an eye-catching
-                    patent-protected kite sports bundle that included a kite, board, and a reel bar.
-                </p>
-                <ol>
-                    <h5 class="text-xl-left font-weight-bolder">Best Place To Kite In Europ</h5>
-                    <li>Bamburgh Beach, UK</li>
-                    <li>Porto Pollo, Sardinia</li>
-                    <li>Lake Garda, Italy</li>
-                    <li>Paros, Greece</li>
-                    <li>Pissouri, Cyprus</li>
-                </ol>
-            </div>
-            <div class="modal-footer">
-                <a href="https://en.wikipedia.org/wiki/Kiteboarding" class="btn btn-primary" target="_blank">Wiki</a>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+                <div class="modal-body">
+                    <p>Harnessed to a large hand-controlled kite, and powered by the wind, the kiteboarder uses a board (similar to a snowboard, wakeboard or skateboard) to ride and glide across the water. Kiteboarders are only able to fly their kites through
+                        an imaginary wind window. Unlike in windsurfing and other sailing disciplines, kiteboarders need minimum wind speed to get their wings up in the sky. The sport of kiteboarding has its roots in the south of France. Between the late
+                        1970s and early 1980s, brothers Dominique and Bruno Legaignoux started testing the use of a dual line kite in water skiing. They got the inspiration from the "Jacob's Ladder" catamaran and its stacked Flexifoil kites, and from
+                        the Birdsail, a kind of mini hang-glider that replaced the windsurf sail. In the early 1990s, and after a few years of research, development, and testing, Oregon's Cory Roeseler and his dad founded KiteSki. The company developed
+                        an eye-catching patent-protected kite sports bundle that included a kite, board, and a reel bar.
+                    </p>
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best Place To Kite In Europ</h5>
+                        <li>Bamburgh Beach, UK</li>
+                        <li>Porto Pollo, Sardinia</li>
+                        <li>Lake Garda, Italy</li>
+                        <li>Paros, Greece</li>
+                        <li>Pissouri, Cyprus</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Kiteboarding" class="btn btn-primary" target="_blank">Wiki</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </html>

@@ -1,5 +1,5 @@
-
 /*wakeborad and kayak images*/
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +10,7 @@ body {
 }
 
 /* The grid: Four equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 25%;
@@ -17,9 +18,10 @@ body {
 }
 
 /* Style the images inside the grid */
+
 .column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .column img:hover {
@@ -27,6 +29,7 @@ body {
 }
 
 /* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -34,12 +37,14 @@ body {
 }
 
 /* The expanding image container */
+
 .container {
   position: relative;
   display: none;
 }
 
 /* Expanding image text */
+
 #imgtext {
   position: absolute;
   bottom: 15px;
@@ -49,6 +54,7 @@ body {
 }
 
 /* Closable button inside the expanded image */
+
 .closebtn {
   position: absolute;
   top: 10px;
@@ -57,43 +63,230 @@ body {
   font-size: 35px;
   cursor: pointer;
 }
+
 /*wakeborad and kayak images*
 /*Quiz Section --------------------------------*/
 
-#water_sport_quiz{
-    
-}
+#water_sport_quiz {}
 
 
 
 /*Results sections ----------------------------*/
 
-.result{
-    
+.result {}
+
+#kiteboarding {}
+
+#sup {}
+
+#diving {}
+
+#surfing {}
+
+#kayak {}
+
+#wakeboarding {}
+
+/* General */
+
+:root {
+  --mainWhite: #FFF;
+  --mainActive: #97D7E7;
+  --mainBlack: #172A34;
 }
 
-#kiteboarding{
-    
+page {
+  width: 100vh;
+  height: 100vh;
 }
 
-#sup{
-    
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#diving{
-    
+.arrow-link {
+  text-decoration: none;
+  color: var(--mainWhite);
 }
 
-#surfing{
-    
+.arrow-link:hover {
+  text-decoration: none;
+  color: var(--mainActive);
 }
 
-#kayak{
-    
+.arrow-down {
+  font-size: xx-large;
 }
 
-#wakeboarding{
-    
+/* Navbar */
+
+#logo {
+  width: 60px;
+  height: 60px;
 }
 
+.nav-link {
+  font-size: 16px;
+  font-family: 'Megrim';
+  font-weight: 500;
+  font-style: normal;
+  line-height: 19px;
+  color: var(--mainWhite);
+}
 
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--mainActive);
+}
+
+/* Main page */
+
+.landing-page {
+  background-image: url("assets/image/background-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  height: calc(100vh + 83px);
+  margin-top: -83px;
+}
+
+.container.landing-page__content {
+  padding-top: 150px;
+}
+
+.main-page-logo__big {
+  width: 222px;
+  height: 222px;
+}
+
+.heading {
+  color: var(--mainWhite);
+}
+
+.heading_1 {
+  font-size: 36px;
+  font-family: 'Megrim';
+}
+
+.heading_2 {
+  font-size: 18px;
+  font-family: 'Marvel';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 0.15rem;
+}
+
+.btn.btn-primary {
+  font-family: 'Marvel';
+  background-color: rgba(14, 1, 66, 0.31);
+  border-radius: 25px;
+  box-sizing: border-box;
+  border: 1px solid var(--mainWhite);
+}
+
+/* Quiz Page */
+
+.quiz-page {
+  background-image: url("assets/image/background-image-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+}
+
+.card-body {
+  width: 349px;
+  height: 365px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  font-family: 'Marvel';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--mainBlack);
+}
+
+/* Sports */
+
+.kayaking {
+  background-image: url("assets/image/kayaking.png");
+}
+
+.sport-heading {
+  font-size: 36px;
+  font-family: 'Megrim';
+  line-height: 42px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--mainWhite);
+}
+
+.sport-card {
+  width: 791px;
+  height: 319px;
+}
+
+.lightbox-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+#light-box-gallery {
+  padding-top: 50px;
+}
+
+#light-box-gallery a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-us-page {
+  background-image: url("assets/image/background-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  height: calc(100vh - 154px);
+}
+
+.contact-form {
+  width: 376px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.form-control.form-control-lg {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-logo {
+  padding-top: 10rem;
+}
+
+#contact-logo {
+  width: 222px;
+  height: 222px;
+}
+
+.footer-basic {
+  height: 154px;
+  background-color: rgba(47, 180, 188, 0.47);
+}
