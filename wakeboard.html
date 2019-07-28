@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wakeboard</title>
 </head>
 <body>
                 <p>
@@ -39,5 +42,43 @@
                 continued to show success. A variety of boards have been made since then that are more 
                 curved and compacted creating a smoother ride.
             </p>
+            
+            <div style="text-align:center">
+  <h2>Images</h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/wakeboarding/wakebd1.jpeg" alt="Wakeboard Image1" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/wakeboarding/wakebd2.jpeg" alt="Wakeboard Image2" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/wakeboarding/wakebd3.jpeg" alt="Wakeboard Image3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/wakeboarding/wakebd4.jpeg" alt="Wakeboard Image4" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/wakeboarding/wakebd5.jpeg" alt="Wakeboard Image5" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 </body>
 </html>
