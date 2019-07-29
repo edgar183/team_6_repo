@@ -3,7 +3,8 @@
 }
 
 .water-sport-image {
-    background-image: url('../image/background-image-2.png');
+    background-image: url("../image/background.jpg");
+    opacity: 1.2;
     height: calc(100vh + 83px);
     background-size: cover;
     display: flex;
@@ -15,7 +16,8 @@
 }
 
 .question-body {
-    background-image: url('../image/background-image.png');
+    /*background-image: url('../image/background-image.png');*/
+    background-image: linear-gradient(#eb01a5, #d13531);
     height: 100%;
     background-size: cover;
     display: flex;

@@ -148,10 +148,11 @@ ul {
 /* Main page */
 
 .landing-page {
-  background-image: url("../image/background-image.png");
+  background-image: url("../image/background.jpg");
+  opacity: 1.2;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   width: auto;
   height: calc(100vh + 83px);
@@ -196,7 +197,7 @@ ul {
 /* Quiz Page */
 
 .quiz-page {
-  background-image: url("../image/background-image-2.png");
+  background-image: url("../image/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -238,9 +239,10 @@ ul {
   color: var(--mainWhite);
 }
 
-.card-img-top{
+.card-img-top {
   height: 300px;
 }
+
 .sport-card {
   width: 791px;
   height: 319px;
@@ -262,7 +264,8 @@ ul {
 }
 
 .contact-us-page {
-  background-image: url("../image/background-image.png");
+  /*background-image: url("../image/background-image.png");*/
+  background-image: linear-gradient(#eb01a5, #d13531);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -295,6 +298,6 @@ ul {
 }
 
 .modal-image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
