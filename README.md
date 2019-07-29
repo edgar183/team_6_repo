@@ -1,12 +1,14 @@
 # Hackathon-Team 6:  Summer Water Sports
 
 Summer has arrived and with it the outdoor activities! This project consist in building a 
-web application based for Summer Water Sports as outdoor activity.
+web application based for Summer Water Sports as outdoor activity. It contens a simple quiz to 
+help user to decide what water sport is more suited for them.
+[Home Pge](https://edgar183.github.io/team_6_repo/index.html)
 
 
-## Team 6 
+### Team 6 
 The team 6 consist of the following people
-### Team 
+
 - @Rimvydas Cesonis 
 - @Rasquin 
 - @Obine
@@ -15,7 +17,7 @@ The team 6 consist of the following people
 ### Judge 
 - @joi_ci
  
-##UX
+## UX
 
 ## Features
 
@@ -70,6 +72,7 @@ https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
 ## Testing
 After manually testing the quiz, there is the posibility that it can give two results.
+
 ### Problems unsolved:
 
 ### Problems solved:

@@ -1,12 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Summer Outdoor sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
-</body>
+    <!--NavBar-->
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+        <div class="container-fluid"><img class="d-flex" id="logo" src="assets/image/logo.svg"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
+                <ul class="nav navbar-nav text-uppercase p-3 px-5">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#home" id="hmbtn">home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#sports" id="sptbtn">sports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#quiz-section" id="qbtn">Quiz</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact" id="ctbtn">contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Landing page-->
+    <section class="landing-page">
+        <div class="container landing-page__content" id="landing">
+            <div class="row pt-1">
+                <div class="col d-flex justify-content-center justify-content-center"><img class="main-page-logo__big" src="assets/image/logo.svg"></div>
+            </div>
+            <div class="row pt-5">
+                <div class="col d-flex justify-content-center">
+                    <h1 class="text-uppercase d-flex justify-content-center heading heading_1">summer outdoor sports</h1>
+                </div>
+            </div>
+            <div class="row pt-5 pb-4">
+                <div class="col d-flex justify-content-center">
+                    <h1 class="justify-content-center heading heading_2">Which sport are you made for? Take our 60 - second test</h1>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col d-flex justify-content-center"><a class="btn btn-primary px-5" role="button" href="#quiz-section">Get started</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- Quiz section -->
+    <section class="d-lg-flex quiz-page" id="quiz-section">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <h1 class="text-uppercase heading_1 heading">take a quiz</h1>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-center align-items-end">
+                            <div>
+                                <p class="d-flex justify-content-center align-items-start" id="quiz">
+                                </p>
+                                <button class="btn btn-primary" id="next" type="button">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sport section -->
+    <section class="contact-us-page" id="sports">
+        <div class="container pt-4">
+            <div class="row">
+                <!-- Kitesurfing card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body ">
+                            <img src="assets/image/kite/kitesurfing.jpg" class="card-img-top" alt="kitesufring">
+                            <h5 class="card-title">Kitesurfing</h5>
+                            <p class="card-text">Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding, surfing, windsurfing, snowboarding, paragliding, and skateboarding.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kiteModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Surfing card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/surf/surfing.jpg" class="card-img-top" alt="Surfing">
+                            <h5 class="card-title">Surfing</h5>
+                            <p class="card-text">Surfing is a water sport that involves riding breaking waves to shore on a piece of equipment called a surfboard. Surfing is usually done in the ocean, but developments in technology have made it possible to create waves in
+                                pools and rivers as an alternative.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#surfModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kayak card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/Kayaking/seakayaking.jpg" class="card-img-top" alt="Kayaking">
+                            <h5 class="card-title">Kayaking</h5>
+                            <p class="card-text">Kayaking is the use of a kayak for moving across water. It is distinguished from canoeing by the sitting position of the paddler and the number of blades on the paddle.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kayakModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wakeboard card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/wakeboarding/wakebd5.jpeg" class="card-img-top" alt="Kayaking">
+                            <h5 class="card-title">Wakeboard</h5>
+                            <p class="card-text">Wakeboarding is a water sport in which the rider, standing on a wakeboard (a short board with foot bindings), is towed behind a motorboat across its wake and especially up off the crest for aerial maneuvers.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wakekModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Diving Card -->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/diving/scubadiver.jpeg" class="card-img-top" alt="Diving">
+                            <h5 class="card-title">Diving</h5>
+                            <p class="card-text">Diving is not for the faint of heart, but opens a completely different and alien world. Doing this will be an unforgettable experience for all who do it.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#divingModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!--SUP Card-->
+                <div class="col-s-12 col-md-6 col-lg-4">
+                    <div class="card pt-4 pl-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/image/sup/sup1.jpeg" class="card-img-top" alt="Paddleboarding">
+                            <h5 class="card-title">Stand Up Paddleboarding</h5>
+                            <p class="card-text">Paddleboarding or SUP is first thought to have happened around 3000 years ago. This sport is great for relaxing out on the waves and some people even do island hopping this way in Hawaii!</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <!-- contact form -->
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center contact-us-page"><img id="contact-logo" src="assets/image/logo.svg"></div>
+                <div class="col-sm-12 col-md-8 d-flex justify-content-center pt-2">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group"><input class="form-control form-control-lg" type="text" required="" placeholder="Name"></div>
+                            <div class="form-group"><input class="form-control form-control-lg" type="email" placeholder="Email"></div>
+                            <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Message"></textarea></div>
+                            <div class="form-group"><button class="btn btn-dark btn-lg justify-content-lg-start align-items-lg-end" type="submit">Contact us</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Footer -->
+                <div class="col-12 footer-basic">
+                    <footer>
+                        <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#home">Home</a></li>
+                            <li class="list-inline-item"><a href="#sports">Sports</a></li>
+                            <li class="list-inline-item"><a href="#quiz">Quiz</a></li>
+                        </ul>
+                    </footer>
+                    <div class="text-center"><span>Copyright team-6</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JS imports-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="assets/js/style_script.js"></script>
+    <!--Kitesurfing modal-->
+    <div class="modal fade" id="kiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/kite/kitesurfing1.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Kitesurfing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Harnessed to a large hand-controlled kite, and powered by the wind, the kiteboarder uses a board (similar to a snowboard, wakeboard or skateboard) to ride and glide across the water. Kiteboarders are only able to fly their kites through
+                        an imaginary wind window. Unlike in windsurfing and other sailing disciplines, kiteboarders need minimum wind speed to get their wings up in the sky. The sport of kiteboarding has its roots in the south of France. Between the late
+                        1970s and early 1980s, brothers Dominique and Bruno Legaignoux started testing the use of a dual line kite in water skiing. They got the inspiration from the "Jacob's Ladder" catamaran and its stacked Flexifoil kites, and from
+                        the Birdsail, a kind of mini hang-glider that replaced the windsurf sail. In the early 1990s, and after a few years of research, development, and testing, Oregon's Cory Roeseler and his dad founded KiteSki. The company developed
+                        an eye-catching patent-protected kite sports bundle that included a kite, board, and a reel bar.
+                    </p>
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best Place To Kite In Europ</h5>
+                        <li>Bamburgh Beach, UK</li>
+                        <li>Porto Pollo, Sardinia</li>
+                        <li>Lake Garda, Italy</li>
+                        <li>Paros, Greece</li>
+                        <li>Pissouri, Cyprus</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Kiteboarding" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Surfing Modal -->
+    <div class="modal fade" id="surfModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/surf/surfing1.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Surfing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Surfing is considered dynamic and accessible, meaning adults, children and even dogs can learn. The popular sport has also inspired several variations, including windsurfing, wakeboarding and skim boarding. The origin of the sport
+                        is said to date back thousands of years, to Polynesia and pre-modern Hawaii, but it’s difficult to pinpoint when exactly it began. Some say fishermen began surfing as a means to move more quickly on the water and then surfing gradually
+                        became a leisure activity. Today it has evolved into more than just a sport; recreational surfing has developed it’s own subculture. Interestingly, the attitude of that culture often clashes with the concept of competitive surfing.
+                        Athletes from each side tend to have very different ideas about the sport and lifestyle. If you’re looking to try surfing for the first time, it’s best to rent the equipment and seek out a qualified instructor. Remember to wear
+                        a wetsuit if the water is cold and to have fun with it. Very few people master surfing during their first lesson, but those who stick with it quickly develop the skills and passion for the sport.
+                    </p>
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best surfing places in Europe</h5>
+                        <li>Spain</li>
+                        <li>The U.K.</li>
+                        <li>France</li>
+                        <li>Portugal</li>
+                        <li>Ireland</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Surfing" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kayaking Modal -->
+    <div class="modal fade" id="kayakModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/Kayaking/ottawa.jpg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Kayaking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>A kayak is a low-to-the-water, canoe-like boat in which the paddler sits facing forward, legs in front, using a double-bladed paddle to pull front-to-back on one side and then the other in rotation.Most kayaks have closed decks, although
+                        sit-on-top and inflatable kayaks are both growing in popularity.
+                    </p>
+                    <p>
+                        Kayaks were created thousands of years ago by the Inuit, formerly known as Eskimos, of the northern Arctic regions. They used driftwood and sometimes the skeleton of whale, to construct the frame of the kayak, and animal skin, particularly seal skin was
+                        used to create the body. The main purpose for creating the kayak, which literally translates to "hunter's boat" was for hunting and fishing. The kayak's stealth capabilities allowed for the hunter to sneak up behind animals on
+                        the shoreline and successfully catch their prey
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Kayaking" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wakeboard Modal -->
+    <div class="modal fade" id="wakekModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/wakeboarding/wakebd2.jpeg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Wakeboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>The rider is usually towed by a rope, but can also be towed by cable systems and winches, and other motorized vehicles like personal watercrafts, cars, trucks, and all-terrain vehicles. Wakeboards are used for competition and pleasure,
+                        including freestyle wakeboarding, X-games, and wakeboard park. The gear and wakeboard boat used are personalized to each individuals’ liking. With diligent practice and training a rider will be skilled enough over time to start
+                        learning and performing tricks.
+                    </p>
+
+                    <p>
+                        Wakeboarding was invented by surfers who were looking for an alternative to surfing when the waves were down and the water was calm. When the wakeboard was invented it was first called a "Skurfer" which was named by Tony Finn in 1985 because the board
+                        is a combination of a surfboard and a water ski. The first board made in the late 80's was introduced by the O’Brien company, which is a water ski manufacturer.
+                    </p>
+
+                    <p>
+                        The O’Brien company introduced the Hyperlite board that was the first “compression-molded neutral-buoyancy wakeboard”. This board made starting in deeper water easier and wakeboarders were able to turn the board more easily. The introduction of this Hyperlite
+                        board was a successful invention by the company that took off in the market and has continued to show success. A variety of boards have been made since then that are more curved and compacted creating a smoother ride.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Wakeboarding" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Diving Modal -->
+    <div class="modal fade" id="divingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/diving/underwater-diving.jpeg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">Diving</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Not for the faint of heart or those who feel claustrophobic. The ocean is the last place apart from space that man has yet to conquer. We have mapped more of the stars than we have of the ocean floor. However this doesn't mean that we can't reach it as
+                        easily! Diving offers the best view into the world of aquatic life aside from aquariums.
+                    </p>
+
+                    <p>Learning is a difficult process however that time your first open water dive begins will be an unforgettable experience, breathing among the fishes, corals and water mammals that share our planet with us. The process takes a couple
+                        of days and it can be dangerous if you dont listen to your instructor, pay attention to the volume of your oxygen tank or see some of the more volatile animals.</p>
+
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best surfing places in Europe</h5>
+                        <li>Portugal: The Azores</li>
+                        <li>Iceland: The Silfra Fissure</li>
+                        <li>Scotland: Scapa Flow</li>
+                        <li>Norway: The Lofoten Islands</li>
+                        <li>Spain: The Canary Islands</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.padi.com/" class="btn btn-primary" target="_blank">PADI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SUP Modal-->
+    <div class="modal fade" id="supModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/image/sup/sup2.jpeg" class="img-responsive modal-image" style="margin:0 auto;"></img>
+                <div class="modal-header">
+                    <h5 class="modal-title">SUP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+
+                        Standup paddleboarding (SUP), the act of propelling oneself on a floating platform with the help of a paddle or pole, traces back to thousands of years ago and across many continents, but its current form and popularity originated in Hawaii in the 1900s.
+                        The sport is one of the oldest sports in the world (although may not have been classified as such) dating to around 3000 years ago with fishermen on the Nile river delta and places such as China for transporting goods along the
+                        Yangxe river.
+
+                    </p>
+
+                    <p>
+
+                        It is a very relaxing sport to do, in lakes, flat rivers and when the surf permits the ocean as well. A lot of professional paddle boarders can go for miles and miles without breaking too much of a sweat, a good example of this is Archie Kapela - Navigating
+                        between the isles of Hawaii and managing to continue on for many hours at a time. In the last decade or so SUP has been split into many different disciplines with different bases around the USA. Four of which are the most notable:
+                        Rick Thomas (San Diego), Ron House (Dana Point/San Clemente), Laird Hamilton (Malibu) and Bob Pearson (Santa Cruz).
+
+                    </p>
+                    <ol>
+                        <h5 class="text-xl-left font-weight-bolder">Best surfing places in Europe</h5>
+                        <li>Spain</li>
+                        <li>Greece</li>
+                        <li>Italy</li>
+                        <li>The Netherlands</li>
+                        <li>The Czech Republic</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://en.wikipedia.org/wiki/Standup_paddleboarding" class="btn btn-primary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </html>
